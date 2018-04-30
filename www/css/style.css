@@ -1,0 +1,301 @@
+
+
+/* sohel code */
+
+.ocs_header{
+    height: 60px;
+    background-color: pink;
+    padding: 0px;
+  
+}
+.ocs_backbutton ,.ocs_backbutton.activated{
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+    height: 60px;
+    width: 60px;
+    font-size: 30px !important;
+    border: none !important;
+    
+}
+.ocs_backbutton:after {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: ' ';
+}
+.ocs_logoutbutton ,.ocs_logoutbutton.activated{
+    /* position: relative; */
+    right: 0px;
+    border: none !important;
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+    height: 60px;
+    width: 60px;
+    font-size: 30px !important;
+  
+}
+.ocs_logoutbutton:after {
+    /* position: relative; */
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    content: ' ';
+}
+.ocs_hederText {
+    text-align: center;
+    Font-Size: 15px;
+    font-weight: bold;
+    Color: white;
+    margin: 0px;
+    line-height: 60px;
+    width: 100%;
+  }
+.ocs_content{
+    background-color: #f8f8f8
+}
+.ocs_has_header{
+    top:60px;
+}
+.ocs_list{
+    margin-bottom: 0px !important; 
+}
+.ocs_list a{
+    font-size: 14px;
+    padding: 10px;
+}
+.ocs_list .item-divider{
+    background-color: antiquewhite;
+}
+.ocs_list .icon{
+    font-size: 14px;
+}
+.newcomplaint_911warning{
+    text-align: center;
+    Font-Size: 15px;
+    font-weight: bold;
+    Color: red;
+    margin: 0px;
+    line-height: 25px;
+}
+.popup-buttons .button:last-child {
+    margin-right: 0px;
+    border-color: pink;
+    background-color: pink;
+    color: #fff;
+}
+.ocs_complaint_image{
+    width: 60vw;
+    height: 60vw;
+    padding: 5px;
+
+}
+.ocs_dashboard_topbanner{
+    margin-top: 10px;
+    width: 90%;
+    height: 200px;
+}
+.ocs_ComplaintImage_div {
+    height: 130px;
+    /* margin-left: 1px; */
+}
+
+.selectimagetypelabel {
+    font-size: 13px !important;
+    color: #7e7c7c !important;
+    text-align: center;
+}
+
+.ocs_ComplaintImage_div_icon {
+    padding-top: 25%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 10%;
+    width: 100%;
+}
+.selectimagetype-popup .popup-head {
+    display: none;
+}
+
+.selectimagetype-popup .popup-body {
+    padding: 1px
+}
+.selectimagetype-popup .popup-buttons {
+    display: none;
+}
+.ocs_selectimage_button, .ocs_selectimage_button.activated{
+    margin-top: 10px;
+    width: 60%;
+    height: 40px;
+    margin-bottom: 10px;
+    Background-color: pink;
+    color: #FFFFFF;
+}
+.ocs_map{
+    height: 300px;
+    width: 80%;
+    display: none;
+    /* background-color: pink; */
+}
+
+.center2 {margin-left: auto;margin-right: auto;}
+.center {text-align: center;}
+.ImagetileM img {
+    margin: 4px !important;
+    width: 70px;
+    height: 70px;
+}
+.borderrightbottom {
+    border-right: solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
+}
+
+.borderBottom {
+    border-bottom: solid 1px lightgray !important;
+}
+
+.borderRight {
+    border-right: solid 1px lightgray !important;
+}
+.borderRightWhite {
+    border-right: solid 1px #ffffff !important;
+}
+
+.item-input {
+    height: 60px;
+    padding: 0px !important;
+}
+.item-floating-label input::-webkit-input-placeholder {
+    color: #444444 !important;
+    font-size: 16px;
+    font-family:'roboto_regular';  
+    opacity: 0.5;
+    width: max-content;
+}
+.item-floating-label {
+    border: none;
+    width: 90%;
+    margin: auto;
+}
+
+.item-floating-label .input-label.has-input  {
+    position: relative;
+    padding: 0px 0 0 30px;
+    opacity: 1;
+    top: 0;
+    -webkit-transition: opacity 0.15s ease-in, top 0.2s linear;
+    transition: opacity 0.15s ease-in, top 0.2s linear;
+}
+.item-floating-label .input-label-select {
+    color: #444444 !important;
+    font-size: 16px;
+    font-family:'roboto_regular';  
+    width: max-content;
+    position: relative;
+    padding: 0px 0 0 30px;
+    opacity: 1;
+    top: 0;
+    -webkit-transition: opacity 0.15s ease-in, top 0.2s linear;
+    transition: opacity 0.15s ease-in, top 0.2s linear;
+}
+.item-floating-label img{
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    /* top: 4vh; */
+    bottom: 10px;
+}
+.item-input input, .item-input textarea {
+    width: 100%;
+    padding-left: 30px;
+    /* padding: 0px; */
+}
+.labelBottomBorder {
+    border-bottom: 1px solid #444444 !important;
+}
+.input-label {
+    color: #444444 !important;
+    font-size: 16px;
+    font-family:'roboto_regular';  
+    opacity: 0.5;
+    width: max-content;
+    padding: none !important;
+}
+.marginleft25{
+    margin-left: 25px;            
+}
+
+.asSelect {
+    width: 100%;
+    color: grey;
+    font-size: 15px;
+    line-height: 1.4;
+    border: 0;
+    height: 35px;
+    /* background-size: 16px; */
+    -webkit-appearance: menulist;
+    /* background-position-x: 98%; */
+    background-color: transparent;
+    /* margin-left: 5px; */
+    padding-left: 30px;
+}
+       
+
+
+.active .input-label{
+    opacity: 1 !important; 
+    padding:0 0 0 30px !important; 
+}
+.imageLabel img{
+    float: left;
+    margin-left: 0px;
+    margin-top: 35px;
+    height: 20px;
+}
+.imageSelect img{
+    float: left;
+    margin-left: 0px;
+    margin-top: 5px;
+    height: 20px;
+}
+/* showloading loader css */
+.loading-container .loading {
+    padding: 0px;
+    border-radius: 5px;
+    background-color: transparent !important;
+    color: #fff;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 15px;
+}
+/* delete this afterwards */
+
+.card-border {
+    border-left: 10px solid red;
+    padding-left: 10px;
+    border-bottom: none !important;
+}
+.rightIcon {
+    margin: 2px 5px 10px 5px;
+    box-shadow: 0 1px 3px red;
+    border-radius: 3px !important;
+}
+.rightIcon img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+  }
+  /* For checkbox background color on registration page */
+  .item-checkbox {
+    padding-left: 60px;
+    border-color: transparent;
+    background: transparent !important;
+}
+.ocs_password input{-webkit-text-security:disc;}
+.ocs_password_none input{-webkit-text-security:none;}

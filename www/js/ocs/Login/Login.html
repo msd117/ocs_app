@@ -1,0 +1,40 @@
+<ion-view view-title="Login" name="Login-view">
+    
+    
+    <ion-header-bar class="headerBar bar ocs_header" align-title="center">
+        <!-- <button ng-click="$ionicGoBack()" class="button ocs_backbutton">
+            <i class="icon ion-chevron-left"></i>
+            <span class="back-text">back</span> 
+        </button> -->
+        <p class="ocs_hederText">Login</p>
+        <!-- <div class="">
+            <img src="img/home.png" ui-sref="homemenu" class="buttonImage">
+        </div> -->
+        <!-- <button class="button ocs_logoutbutton " ng-click="logout()">
+            <i class="icon ion-log-out"></i>
+        </button> -->
+    </ion-header-bar>
+        <ion-content class="ocs_has_header ocs_content">
+            <form name="userForm" ng-submit="login()" >
+                
+                <div class="center">
+                    <img src="img/amc3.png" alt="Default Image" onError="this.src='img/amc3.png'" class="ocs_dashboard_topbanner">
+                </div>
+                <div class="padding10 margintop10">
+                    <div class=" resultCard ">
+                        <div class="listlabel">
+                            <label class="item item-input item-floating-label ocs_password labelBottomBorder "> 
+                                <img src="img/pin.png"> 
+                                    <span class="input-label">PIN</span>
+                                    <input type="tel" name="total" ng-model="data.PIN"  required placeholder="Enter PIN">
+                            </label>
+                        </div>
+                        <div class="center">
+                            <button type="submit" class="button ocs_selectimage_button" ng-disabled="userForm.$invalid">SUBMIT</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </ion-content>
+    </ion-view>
+    

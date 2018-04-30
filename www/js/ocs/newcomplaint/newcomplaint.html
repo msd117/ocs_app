@@ -1,0 +1,87 @@
+<ion-view view-title="NewComplaint" name="newcomplaint-view">
+
+
+<ion-header-bar class="headerBar bar ocs_header" align-title="center">
+    <button ng-click="$ionicGoBack()" class="button ocs_backbutton">
+        <i class="icon ion-chevron-left"></i>
+        <!-- <span class="back-text">back</span> -->
+    </button>
+    <p class="ocs_hederText">Select Complaint Type</p>
+    <!-- <div class="">
+        <img src="img/home.png" ui-sref="homemenu" class="buttonImage">
+    </div> -->
+    <button class="button ocs_logoutbutton " ng-click="logout()">
+        <i class="icon ion-log-out"></i>
+    </button>
+</ion-header-bar>
+
+
+    <ion-content class="ocs_has_header ocs_content">
+        <p class="newcomplaint_911warning">For Emergencies Please call 911</p>
+        <div class="list ocs_list" ng-repeat="x in complaints">
+
+            <div class="item item-divider" ng-if="x.divider">
+               {{x.title}}
+            </div>
+            <a class="item  item-icon-right" ng-click="newcomplaint(x.title)" href="#" ng-if="!x.divider" >
+                {{x.title}}
+                <i class="icon ion-chevron-right"></i>
+            </a>
+        </div>
+
+
+    </ion-content>
+</ion-view>
+
+
+
+ 
+ 
+ 
+ 
+ <!-- <ons-page>
+            <ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center">Select The Type of Complaint</div>
+            </ons-toolbar>
+
+            <ons-row style="margin-top: 0px; text-align: center;">
+                <ons-col>
+                    <p style="color:red;">For Emergencies Please call 911</p>
+                    <ons-list>
+                        <ons-list-header>Litter and Trash</ons-list-header>
+
+                        <ons-list-item modifier="chevron" ng-click="data.msg = 'Litter'; menu.setMainPage('newcomplaint.html', {closeMenu: true})">Litter</ons-list-item>
+                        <ons-list-item modifier="chevron" ng-click="data.msg = 'Overflowing trash can'; menu.setMainPage('newcomplaint.html', {closeMenu: true})">Overflowing trash can</ons-list-item>
+
+                        <ons-list-header>Health and Hazards</ons-list-header>
+
+                        <ons-list-item modifier="chevron" ng-click="data.msg = 'Dead animal pick-up, data.omsg='fine'; menu.setMainPage('newcomplaint.html', {closeMenu: true})">Dead animal pick-up</ons-list-item>
+                        <ons-list-item modifier="chevron" ng-click="data.msg = 'Gutter overflow'; menu.setMainPage('newcomplaint.html', {closeMenu: true})">Gutter overflow</ons-list-item>
+
+                        <ons-list-header>Street damage</ons-list-header>
+
+                        <ons-list-item modifier="chevron" ng-click="data.msg = 'Broken sign'; menu.setMainPage('newcomplaint.html', {closeMenu: true})">Broken sign</ons-list-item>
+                        <ons-list-item modifier="chevron" ng-click="data.msg = 'Pothole'; menu.setMainPage('newcomplaint.html', {closeMenu: true})">Pothole</ons-list-item>
+                        <ons-list-item modifier="chevron" ng-click="data.msg = 'Illegal parking'; menu.setMainPage('newcomplaint.html', {closeMenu: true})">Illegal parking</ons-list-item>
+
+                        <ons-list-header>Lights</ons-list-header>
+
+                        <ons-list-item modifier="chevron" ng-click="data.msg = 'Parks lights'; menu.setMainPage('newcomplaint.html', {closeMenu: true})">Parks lights</ons-list-item>
+                        <ons-list-item modifier="chevron" ng-click="data.msg = 'Street light not working'; menu.setMainPage('newcomplaint.html', {closeMenu: true})">Street light not working</ons-list-item>
+                        <ons-list-item modifier="chevron" ng-click="data.msg = 'Traffic signal'; menu.setMainPage('newcomplaint.html', {closeMenu: true})">Traffic signal</ons-list-item>
+             
+                        <ons-list-header>General</ons-list-header>
+
+                        <ons-list-item modifier="chevron" ng-click="data.msg = 'Others'; menu.setMainPage('newcomplaint.html', {closeMenu: true})">Others</ons-list-item>
+                       
+                    </ons-list>
+
+                </ons-col>
+            </ons-row>
+
+        </ons-page> -->
