@@ -1,0 +1,46 @@
+<ion-header-bar class="headerBar bar ocs_header" align-title="center">
+    <button  class="button ocs_backbutton">
+    </button>
+    <p class="ocs_hederText">Dashboard</p>
+    <button class="button ocs_logoutbutton " ng-click="logout()">
+        <i class="icon ion-log-out"></i>
+    </button>
+</ion-header-bar>
+<ion-view  hide-back-button="true" hide-nav-bar="true" cache-view="false">
+ 
+
+    <ion-content class="ocs_has_header">
+        <div class="row">
+            <div class="col ImagetileM center borderrightbottom " ng-click="goto('selecttype')">
+                <img src="img/new.png">
+                <p>Select lottery Type</p>
+            </div>
+<!-- 
+            <div class="col ImagetileM center borderrightbottom" ng-click="goto('viewcomplaint')">
+                <img src="img/view.png">
+                <p>View Complaint</p>
+            </div>
+            <div class="col  ImagetileM center borderBottom" ng-click="goto('viewcomplaintsnearme')">
+                <img src="img/viewnearme.png">
+                <p>View NearBy Complaints</p>
+            </div> -->
+        </div>
+
+        <!-- <div class="row">
+            <div class="col ImagetileM center borderrightbottom" ng-click="goto('myprofile')">
+                <img src="img/myprofile.png">
+                <p>My Profile</p>
+            </div>
+
+            <div class="col ImagetileM center borderrightbottom" ng-click="goto('settings')">
+                <img src="img/setting.png">
+                <p>Settings</p>
+            </div>
+
+            <div class="col ImagetileM center borderBottom" ng-click="goto('aboutus')">
+                <img src="img/aboutus2.png">
+                <p>About Us</p>
+            </div>
+        </div> -->
+    </ion-content>
+</ion-view>

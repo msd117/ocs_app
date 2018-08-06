@@ -28,17 +28,20 @@ angular.module('registration.module',[])
             success:function(data,status,headers,config){
                 console.log(JSON.stringify(data));
                 if(data.SUCCESS=="1"){
-                    Global.setInLocalStorage("cno", data.cno);
-                
+                    Global.setInLocalStorage("cno", $scope.data.mobilenumber);
                     Global.showAlert(GlobalConstants.infoAlertHeader,data.message);
                     $state.go('Login');
                     $ionicLoading.hide();
+                }else  if(data.SUCCESS=="1001"){
+                    $ionicLoading.hide();
+                    $scope.data={};
+                    $state.go('UsernameLogin');
+                    Global.showAlert(GlobalConstants.errorAlertHeader,data.message);           
                 }else{
                     $ionicLoading.hide();
                     $scope.data={};
                     Global.showAlert(GlobalConstants.errorAlertHeader,data.message);                    
                 }
-                 
             },
             error:function(data,status,headers,config){
                  $ionicLoading.hide();

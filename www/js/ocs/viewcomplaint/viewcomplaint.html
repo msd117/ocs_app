@@ -18,7 +18,10 @@
             <div class="list marginTop15" ng-show="data.complaints.length"> 
                 <a ng-repeat="item in data.complaints" class="item item-icon-left rightIcon card-border" ng-click="onListItemClick(item.id)"> 
                     <img src="img/description.png"> 
-                    <h2 class="ng-binding">{{item.id}}</h2> 
+                    <h1 class="ng-binding">{{item.complainttype}}</h1> 
+                    <h2 class="ng-binding">{{item.description}}</h2> 
+                    <h3 class="ng-binding">{{item.address}}</h3> 
+                    address
                 </a> 
             </div>
         </ion-content>

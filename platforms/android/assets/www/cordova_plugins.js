@@ -348,6 +348,36 @@ module.exports = [
         "clobbers": [
             "plugins.crop"
         ]
+    },
+    {
+        "id": "es6-promise-plugin.Promise",
+        "file": "plugins/es6-promise-plugin/www/promise.js",
+        "pluginId": "es6-promise-plugin",
+        "runs": true
+    },
+    {
+        "id": "cordova-plugin-x-socialsharing.SocialSharing",
+        "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+        "pluginId": "cordova-plugin-x-socialsharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
+    },
+    {
+        "id": "cordova-plugin-sim.Sim",
+        "file": "plugins/cordova-plugin-sim/www/sim.js",
+        "pluginId": "cordova-plugin-sim",
+        "merges": [
+            "window.plugins.sim"
+        ]
+    },
+    {
+        "id": "cordova-plugin-sim.SimAndroid",
+        "file": "plugins/cordova-plugin-sim/www/android/sim.js",
+        "pluginId": "cordova-plugin-sim",
+        "merges": [
+            "window.plugins.sim"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -372,7 +402,10 @@ module.exports.metadata =
     "cl.rmd.cordova.dialoggps": "0.0.2",
     "cordova-plugin-geolocation": "2.4.3",
     "cordova.plugins.diagnostic": "3.9.2",
-    "cordova-plugin-crop": "0.3.1"
+    "cordova-plugin-crop": "0.3.1",
+    "es6-promise-plugin": "4.2.2",
+    "cordova-plugin-x-socialsharing": "5.4.1",
+    "cordova-plugin-sim": "1.3.3"
 };
 // BOTTOM OF METADATA
 });

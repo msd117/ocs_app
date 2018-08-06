@@ -20,23 +20,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }
     //fetch table rows from mysql db
-    $sql = "select * from Login where mobilenumber='$mobilenumber' and Password='$pin'";
+    $sql = "select id from Login where mobilenumber='$mobilenumber' and Password='$pin'";
     $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
 
     //create an array
-    $emparray = array();
+    $id = "";
        while($row =mysqli_fetch_assoc($result))
        {
-          $emparray[] = $row;
+          $id = $row['id'];
        }
        // creat an response object
        if (!isset($response)){ 
            $response = new stdClass();
        }
    
-   if(count($emparray)>0){
+   if(count($id)>0){
        $response->SUCCESS = "1";
-       $response->data = $emparray;
+       $response->id =$id;
    
    }else{
        $response->SUCCESS = "-1";

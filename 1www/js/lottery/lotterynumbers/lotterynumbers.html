@@ -1,0 +1,138 @@
+<ion-header-bar class="headerBar bar ocs_header" align-title="center">
+    <button ng-click="$ionicGoBack()" class="button ocs_backbutton">
+        <i class="icon ion-chevron-left"></i>
+        <!-- <span class="back-text">back</span> -->
+    </button>
+    <p class="ocs_hederText">Lottery numbers</p>
+    <button class="button ocs_logoutbutton " ng-click="logout()">
+        <i class="icon ion-log-out"></i>
+    </button>
+</ion-header-bar>
+<ion-view  hide-back-button="true" hide-nav-bar="true" cache-view="false">
+ 
+
+<ion-content class="ocs_has_header">
+    <div>
+        <h2 class="selectedlotterytext">
+            Lottery Name :: {{
+                data.selectedLotterytype
+            }}
+        </h2>
+    </div>
+    <div class="row Radiobuttons">
+        <div class="col">
+            <label class = "item item-radio">
+                    <input type = "radio" ng-model="data.type" ng value="A" name = "group1" />
+                    <div class = "item-content" ng-class="{'selectedradio':data.type=='A'}">
+                        Type-A
+                    </div>
+                    <i class = "radio-icon ion-checkmark"></i>
+            </label>
+        </div>
+        
+        <div class="col">              
+            <label class = "item item-radio">
+                <input type = "radio" ng-model="data.type" value="B"  name = "group1" />
+                <div class = "item-content" ng-class="{'selectedradio':data.type=='B'}">
+                    Types-B
+                </div>
+                <i class = "radio-icon ion-checkmark"></i>
+            </label>
+        </div>
+    </div>
+    <div id="passwordDiv" class="row passworddDiv" ng-if="passcode.length>0" >
+        <div id="00" name="00" class="item item-text-wrap   loginPin " >
+            <h2 class="ng-binding">
+                {{
+                    passcode
+                }}
+            </h2>
+        </div>
+    </div>
+    <div id="passwordDiv" class="row passworddDiv" ng-if="passcode.length==0">
+        <div id="00" name="00" class="item item-text-wrap   loginPin2 " >
+            <h2 class="ng-binding">
+                {{
+                    placeholder
+                }}
+            </h2>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="selectedlotterytext2">
+             Total Amount :: {{
+                totalAmount
+            }}
+        </h2>
+    </div>
+    <div id="buttonDiv" class="buttonDiv">
+        <div id="firstRow" class="row">
+            <div id="seven" class="col col-20 ">
+                <button class="button  button button-light screenButtons " type="button" ng-click="pinpasswordadd(7)"><span>7</span></button>
+            </div>
+            <div id="eight" class="col col-20">
+                <button class="button  button button-light screenButtons " type="button" ng-click="pinpasswordadd(8)"><span>8</span></button>
+            </div>
+            <div id="nine" class="col col-20">
+                <button class="button  button button-light screenButtons " type="button" ng-click="pinpasswordadd(9)"><span>9</span></button>
+            </div>
+            <div id="neew" class="col col-20 ">
+                <button class="button  button icon ion-android-add-circle button-light screenButtons_grey" type="button" ng-click="pinaddanother()"><span></span></button>
+            </div>
+
+        </div>
+        <div id="secondRow" class="row">
+            <div id="four" class="col col-20 ">
+                <button class="button  button button-light screenButtons " type="button" ng-click="pinpasswordadd(4)"><span>4</span></button>
+            </div>
+            <div id="five" class="col col-20">
+                <button class="button  button button-light screenButtons " type="button" ng-click="pinpasswordadd(5)"><span>5</span></button>
+            </div>
+            <div id="six" class="col col-20">
+                <button class="button  button button-light screenButtons " type="button" ng-click="pinpasswordadd(6)"><span>6</span></button>
+            </div>
+            <div id="neew" class="col col-20 ">
+                <button class="button  button icon ion-android-delete button-light screenButtons_grey " type="button" ng-click="pinpasswordclear()"><span></span></button>
+            </div>
+        </div>
+        <div id="thirdRow" class="row">
+            <div id="one" class="col col-20 ">
+                <button class="button  button button-light screenButtons " type="button" ng-click="pinpasswordadd(1)"><span>1</span></button>
+            </div>
+            <div id="two" class="col col-20">
+                <button class="button  button button-light screenButtons " type="button" ng-click="pinpasswordadd(2)"><span>2</span></button>
+            </div>
+            <div id="three" class="col col-20">
+                <button class="button  button button-light screenButtons " type="button" ng-click="pinpasswordadd(3)"><span>3</span></button>
+            </div>
+            <div id="submit" class="col col-20">
+                <button class="button  button icon ion-log-out button-light screenButtons_grey " ng-click="logout()" type="button"><span></span></button>
+            </div>
+        </div>
+        <div id="fourthRow" class="row">
+            <div id="x" class="col col-20">
+                    <button class="button  button button-light screenButtons " type="button" ng-click="pinpasswordadd('X')"><span>X</span></button>
+            </div>
+            <div id="zero" class="col col-20">
+                <button class="button  button button-light screenButtons " type="button" ng-click="pinpasswordadd(0)"><span>0</span></button>
+            </div>
+            <div id="back" class="col col-20 ">
+                    <button class="button  button icon ion-arrow-left-a button-light screenButtons " ng-click="pinpassworddelete()" type="button"><span></span></button>
+            </div>
+            <div id="submit" class="col col-20">
+                <button class="button  button icon ion-checkmark-circled button-light screenButtons_grey " ng-click="pinpasswordsubmit()" type="button"><span></span></button>
+            </div>
+        </div>
+        <!-- <div id="fifthRow" class="row">
+        
+            <div id="zero" class="col col-50 col-offset-20">
+                <button class="button  button button-light screenButtons " type="button" ng-click="pinaddanother()"><span>Add Another</span></button>
+            </div>
+            <div id="submit" class="col col-20">
+                <button class="button  button icon ion-checkmark-circled button-light screenButtons " ng-click="pinpasswordsubmit()" type="button"><span></span></button>
+            </div>
+        </div> -->
+    </div>
+   
+</ion-content>
