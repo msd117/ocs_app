@@ -28,7 +28,7 @@ angular.module('registration.module',[])
             success:function(data,status,headers,config){
                 console.log(JSON.stringify(data));
                 if(data.SUCCESS=="1"){
-                    Global.setInLocalStorage("cno", $scope.data.mobilenumber);
+                    Global.setInLocalStorage("cno", data.cno);
                     Global.showAlert(GlobalConstants.infoAlertHeader,data.message);
                     $state.go('Login');
                     $ionicLoading.hide();

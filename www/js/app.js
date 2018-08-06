@@ -103,7 +103,7 @@
 
 
                 $ionicPlatform.registerBackButtonAction(function (event) {
-                    if ($state.current.name == "AddAmount" || $state.current.name == "registration" || $state.current.name == "DebitCardLogin") {
+                    if ($state.current.name == "landingpage" || $state.current.name == "Login" ) {
                         var confirmPopup = $ionicPopup.confirm({
                             title: 'Exit',
                             template: 'Exit Application, Are you sure. Continue?'
@@ -113,6 +113,8 @@
                                 navigator.app.exitApp();
                             } 
                         });
+                    }else if( $state.current.name == "UsernameLogin"){
+                        $state.go("landingpage");
                     }
                     event.preventDefault();
                 }, 100);
@@ -122,7 +124,7 @@
                 
                 
                 //show first screen
-                var cno=Global.getFromLocalStorage("cno");
+                var cno=Global.getFromLocalStorage(GlobalConstants.ls_mobilenumber);
                 if(cno && cno.length>0){
                     $state.go("UsernameLogin");
                 }else{
@@ -135,7 +137,7 @@
 
 
             $rootScope.goto = function (pageName) {
-            
+                
                     $state.go(pageName);
                 
             }

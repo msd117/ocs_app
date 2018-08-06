@@ -17,7 +17,7 @@ angular.module('starter.constants', [])
         "UsernameLogin":"https://onlinecomplaintsystem.000webhostapp.com/UsernameLogin.php",
         
         
-        
+        "ls_mobilenumber":"mobilenumber",
         
         "complaints":[
             {"title": "Litter and Trash","divider":true},
