@@ -302,3 +302,34 @@
 }
 .ocs_password input{-webkit-text-security:disc;}
 .ocs_password_none input{-webkit-text-security:none;}
+
+
+
+#map {
+    height: 400px;
+    width: 100%;
+  }
+  #legend {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #000;
+  }
+  #legend h3 {
+    margin-top: 0;
+  }
+  #legend img {
+    vertical-align: middle;
+  }
+
+  .profileimage {
+    margin-top: 45px !important;
+    border-radius: 50%;
+    width: 120px!important;
+    height: 120px !important;
+    border: 2px solid red;
+    margin-bottom: 15px !important;
+  
+    
+}

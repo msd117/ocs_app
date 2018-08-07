@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
            $response = new stdClass();
        }
    
-   if(count($id)>0){
+   if(strlen($id)>0){
        $response->SUCCESS = "1";
        $response->id =$id;
    

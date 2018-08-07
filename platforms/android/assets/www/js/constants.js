@@ -15,6 +15,8 @@ angular.module('starter.constants', [])
         "registration":"https://onlinecomplaintsystem.000webhostapp.com/Registration.php",
         "login":"https://onlinecomplaintsystem.000webhostapp.com/Login.php",
         "UsernameLogin":"https://onlinecomplaintsystem.000webhostapp.com/UsernameLogin.php",
+        "viewcomplaintnearme":"https://onlinecomplaintsystem.000webhostapp.com/viewcomplaintsnearme.php",
+        "mydetails":"https://onlinecomplaintsystem.000webhostapp.com/mydetails.php",
         
         
         "ls_mobilenumber":"mobilenumber",

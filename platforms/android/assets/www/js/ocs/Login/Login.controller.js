@@ -55,9 +55,8 @@ $scope.UsernameLogin=function(){
                 $state.go('dashboard');
                 $ionicLoading.hide();
             }else{
-                // Global.showAlert(GlobalConstants.ErrorHeading,JSON.stringify(data));
-                $scope.data.mobilenumber="";
-                $scope.data.pin="";
+                Global.showAlert(GlobalConstants.errorAlertHeader, data.message);
+                $scope.data={};
                 $ionicLoading.hide();
             }
         },

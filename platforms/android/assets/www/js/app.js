@@ -11,6 +11,8 @@
     'Login.module',
     'complaintbyid.module',
     'viewcomplaint.module',
+    'viewcomplaintnearme.module',
+    'mydetails.module',
     'newcomplaint.module',
     'dashboard.module',
     'complaintdetails.module'
