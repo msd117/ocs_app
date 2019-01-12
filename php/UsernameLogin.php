@@ -20,14 +20,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }
     //fetch table rows from mysql db
-    $sql = "select id from Login where mobilenumber='$mobilenumber' and Password='$pin'";
+    $sql = "select id,isAdmin from Login where mobilenumber='$mobilenumber' and Password='$pin'";
     $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
 
     //create an array
     $id = "";
+    $isAdmin = "";
        while($row =mysqli_fetch_assoc($result))
        {
           $id = $row['id'];
+          $isAdmin = $row['isAdmin'];
        }
        // creat an response object
        if (!isset($response)){ 
@@ -37,6 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
    if(strlen($id)>0){
        $response->SUCCESS = "1";
        $response->id =$id;
+       $response->isAdmin = $isAdmin;
    
    }else{
        $response->SUCCESS = "-1";

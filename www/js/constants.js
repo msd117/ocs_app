@@ -17,6 +17,7 @@ angular.module('starter.constants', [])
         "UsernameLogin":"https://onlinecomplaintsystem.000webhostapp.com/UsernameLogin.php",
         "viewcomplaintnearme":"https://onlinecomplaintsystem.000webhostapp.com/viewcomplaintsnearme.php",
         "mydetails":"https://onlinecomplaintsystem.000webhostapp.com/mydetails.php",
+        "forgotpassword":"https://onlinecomplaintsystem.000webhostapp.com/forgotpassword.php",
         
         
         "ls_mobilenumber":"mobilenumber",
