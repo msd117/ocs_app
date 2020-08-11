@@ -61,24 +61,16 @@
     <feature name="SocialSharing">
         <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
     </feature>
-<<<<<<< HEAD
-=======
     <feature name="Sim">
         <param name="android-package" value="com.pbakondy.Sim" />
     </feature>
->>>>>>> c93f7a5dd149dc9aca905bd750173d7aea418efd
     <feature name="Diagnostic">
         <param name="android-package" value="cordova.plugins.Diagnostic" />
         <param name="onload" value="true" />
     </feature>
     <name>OCS</name>
-<<<<<<< HEAD
-    <description>An awesome Maven app</description>
-    <author email="javahostingtest@gmail.com" href="https://www.google.com/gmail">StepUp Team</author>
-=======
     <description>An awesome app</description>
     <author email="msd117@yahoo.com" href="https://www.google.com/gmail">MSD Team</author>
->>>>>>> c93f7a5dd149dc9aca905bd750173d7aea418efd
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />

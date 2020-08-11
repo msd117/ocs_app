@@ -49,14 +49,9 @@ $scope.UsernameLogin=function(){
 
         success:function(data,status,headers,config){
             if(data.SUCCESS=="1"){
-<<<<<<< HEAD
-                // Global.showAlert(GlobalConstants.ErrorHeading,JSON.stringify(data));
-                Global.setInLocalStorage("cno",data.id),
-=======
                 console.log(JSON.stringify(data));
                 Global.setInLocalStorage("cno", data.id);
                 Global.setInLocalStorage(GlobalConstants.ls_mobilenumber, $scope.data.mobilenumber);
->>>>>>> c93f7a5dd149dc9aca905bd750173d7aea418efd
                 $state.go('dashboard');
                 $ionicLoading.hide();
             }else{

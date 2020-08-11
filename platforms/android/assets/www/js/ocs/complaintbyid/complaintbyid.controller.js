@@ -18,7 +18,6 @@ function complaintbyid($scope, $ionicPlatform, $rootScope, $interval, $timeout, 
         $scope.data.description = selectedcomplaint.description;
         $scope.data.status = selectedcomplaint.status;
 
-<<<<<<< HEAD
         // Global.showLoading()
         // var jsondata = {
         //     "selectedid":$scope.data.selectedid,
@@ -81,11 +80,6 @@ function complaintbyid($scope, $ionicPlatform, $rootScope, $interval, $timeout, 
         window.plugins.socialsharing.shareWithOptions(options, onSuccess, onError);
     }
 
-=======
-        
-         
-      });
->>>>>>> c93f7a5dd149dc9aca905bd750173d7aea418efd
 
 
 

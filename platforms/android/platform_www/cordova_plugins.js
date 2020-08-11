@@ -362,8 +362,6 @@ module.exports = [
         "clobbers": [
             "window.plugins.socialsharing"
         ]
-<<<<<<< HEAD
-=======
     },
     {
         "id": "cordova-plugin-sim.Sim",
@@ -380,7 +378,6 @@ module.exports = [
         "merges": [
             "window.plugins.sim"
         ]
->>>>>>> c93f7a5dd149dc9aca905bd750173d7aea418efd
     }
 ];
 module.exports.metadata = 
@@ -407,12 +404,8 @@ module.exports.metadata =
     "cordova.plugins.diagnostic": "3.9.2",
     "cordova-plugin-crop": "0.3.1",
     "es6-promise-plugin": "4.2.2",
-<<<<<<< HEAD
-    "cordova-plugin-x-socialsharing": "5.4.0"
-=======
     "cordova-plugin-x-socialsharing": "5.4.1",
     "cordova-plugin-sim": "1.3.3"
->>>>>>> c93f7a5dd149dc9aca905bd750173d7aea418efd
 };
 // BOTTOM OF METADATA
 });

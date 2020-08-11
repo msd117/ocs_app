@@ -17,15 +17,15 @@ angular.module('starter.constants', [])
         "UsernameLogin":"https://ocs-project.000webhostapp.com/api/UsernameLogin.php",
 
         
-        "newcomplaint":"https://onlinecomplaintsystem.000webhostapp.com/newcomplaint.php",
-        "viewcomplaint":"https://onlinecomplaintsystem.000webhostapp.com/ViewComplaints.php",
-        "complaintbyid":"https://onlinecomplaintsystem.000webhostapp.com/complaintbyid.php",
-        "registration":"https://onlinecomplaintsystem.000webhostapp.com/Registration.php",
-        "login":"https://onlinecomplaintsystem.000webhostapp.com/Login.php",
-        "UsernameLogin":"https://onlinecomplaintsystem.000webhostapp.com/UsernameLogin.php",
-        "viewcomplaintnearme":"https://onlinecomplaintsystem.000webhostapp.com/viewcomplaintsnearme.php",
-        "mydetails":"https://onlinecomplaintsystem.000webhostapp.com/mydetails.php",
-        "forgotpassword":"https://onlinecomplaintsystem.000webhostapp.com/forgotpassword.php",
+        // "newcomplaint":"https://ocs-project.000webhostapp.com/api/newcomplaint.php",
+        // "viewcomplaint":"https://ocs-project.000webhostapp.com/api/ViewComplaints.php",
+        // "complaintbyid":"https://ocs-project.000webhostapp.com/api/complaintbyid.php",
+        // "registration":"https://ocs-project.000webhostapp.com/api/Registration.php",
+        // "login":"https://ocs-project.000webhostapp.com/api/Login.php",
+        // "UsernameLogin":"https://ocs-project.000webhostapp.com/api/UsernameLogin.php",
+        "viewcomplaintnearme":"https://ocs-project.000webhostapp.com/api/viewcomplaintsnearme.php",
+        "mydetails":"https://ocs-project.000webhostapp.com/api/mydetails.php",
+        "forgotpassword":"https://ocs-project.000webhostapp.com/api/forgotpassword.php",
         
         
         "ls_mobilenumber":"mobilenumber",

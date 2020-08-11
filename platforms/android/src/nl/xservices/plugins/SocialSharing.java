@@ -216,11 +216,7 @@ public class SocialSharing extends CordovaPlugin {
         jsonObject.optString("subject", null),
         jsonObject.optJSONArray("files") == null ? new JSONArray() : jsonObject.optJSONArray("files"),
         jsonObject.optString("url", null),
-<<<<<<< HEAD
         null,
-=======
-        jsonObject.optString("appPackageName", null),
->>>>>>> c93f7a5dd149dc9aca905bd750173d7aea418efd
         jsonObject.optString("chooserTitle", null),
         false,
         false
