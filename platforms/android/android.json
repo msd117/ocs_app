@@ -83,6 +83,10 @@
             {
               "xml": "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"Sim\"><param name=\"android-package\" value=\"com.pbakondy.Sim\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -116,6 +120,10 @@
             },
             {
               "xml": "<uses-feature android:name=\"android.hardware.location.gps\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
               "count": 1
             }
           ],
@@ -242,6 +250,9 @@
       "PACKAGE_NAME": "com.stepup.maven"
     },
     "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "com.stepup.maven"
+    },
+    "cordova-plugin-sim": {
       "PACKAGE_NAME": "com.stepup.maven"
     }
   },
@@ -609,6 +620,22 @@
       "clobbers": [
         "window.plugins.socialsharing"
       ]
+    },
+    {
+      "id": "cordova-plugin-sim.Sim",
+      "file": "plugins/cordova-plugin-sim/www/sim.js",
+      "pluginId": "cordova-plugin-sim",
+      "merges": [
+        "window.plugins.sim"
+      ]
+    },
+    {
+      "id": "cordova-plugin-sim.SimAndroid",
+      "file": "plugins/cordova-plugin-sim/www/android/sim.js",
+      "pluginId": "cordova-plugin-sim",
+      "merges": [
+        "window.plugins.sim"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -633,6 +660,7 @@
     "cordova.plugins.diagnostic": "3.9.2",
     "cordova-plugin-crop": "0.3.1",
     "es6-promise-plugin": "4.2.2",
-    "cordova-plugin-x-socialsharing": "5.4.0"
+    "cordova-plugin-x-socialsharing": "5.4.1",
+    "cordova-plugin-sim": "1.3.3"
   }
 }

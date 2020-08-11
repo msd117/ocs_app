@@ -18,11 +18,14 @@ static NSString *const kShareOptionUrl = @"url";
 }
 
 - (void)pluginInitialize {
+<<<<<<< HEAD
     [self.commandDelegate runInBackground:^{
         if ([self isEmailAvailable]) {
             [self cycleTheGlobalMailComposer];
         }
     }];
+=======
+>>>>>>> c93f7a5dd149dc9aca905bd750173d7aea418efd
 }
 
 - (void)available:(CDVInvokedUrlCommand*)command {
@@ -235,6 +238,11 @@ static NSString *const kShareOptionUrl = @"url";
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
   } else if ([@"com.apple.social.facebook" caseInsensitiveCompare:via] == NSOrderedSame && [self canShareViaFacebook]) {
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+<<<<<<< HEAD
+=======
+  } else if ([@"com.apple.social.twitter" caseInsensitiveCompare:via] == NSOrderedSame && [self canShareViaTwitter]) {
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+>>>>>>> c93f7a5dd149dc9aca905bd750173d7aea418efd
   } else if ([self isAvailableForSharing:command type:via]) {
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
   } else {
@@ -457,7 +465,11 @@ static NSString *const kShareOptionUrl = @"url";
            didFinishWithResult:(MFMailComposeResult)result
                          error:(NSError*)error {
   bool ok = result == MFMailComposeResultSent;
+<<<<<<< HEAD
   [self.globalMailComposer dismissViewControllerAnimated:YES completion:^{[self cycleTheGlobalMailComposer];}];
+=======
+  [self.globalMailComposer dismissViewControllerAnimated:YES completion:nil];
+>>>>>>> c93f7a5dd149dc9aca905bd750173d7aea418efd
   CDVPluginResult * pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:ok];
   [self.commandDelegate sendPluginResult:pluginResult callbackId:_command.callbackId];
 }
@@ -534,6 +546,13 @@ static NSString *const kShareOptionUrl = @"url";
   return [[UIApplication sharedApplication] canOpenURL: [NSURL URLWithString:@"fb://"]]; // requires whitelisting on iOS9
 }
 
+<<<<<<< HEAD
+=======
+- (bool)canShareViaTwitter {
+  return [[UIApplication sharedApplication] canOpenURL: [NSURL URLWithString:@"twitter://"]]; // requires whitelisting on iOS9
+}
+
+>>>>>>> c93f7a5dd149dc9aca905bd750173d7aea418efd
 // this is only an internal test method for now, can be used to open a share sheet with 'Open in xx' links for tumblr, drive, dropbox, ..
 - (void)openImage:(NSString *)imageName {
   UIImage* image =[self getImage:imageName];

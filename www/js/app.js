@@ -5,16 +5,14 @@
     'starter.controllers',
     'starter.services',
     'starter.directives',
-    'UserAccountDetails.module',
-    'AccountDetailScreen.module',
-    'AddAmount.module',
-    // 'Login.module',
-    // 'ngMap',
+    
     
     'registration.module',
     'Login.module',
     'complaintbyid.module',
     'viewcomplaint.module',
+    'viewcomplaintnearme.module',
+    'mydetails.module',
     'newcomplaint.module',
     'dashboard.module',
     'complaintdetails.module'
@@ -107,7 +105,7 @@
 
 
                 $ionicPlatform.registerBackButtonAction(function (event) {
-                    if ($state.current.name == "AddAmount" || $state.current.name == "registration" || $state.current.name == "DebitCardLogin") {
+                    if ($state.current.name == "landingpage" || $state.current.name == "Login" ) {
                         var confirmPopup = $ionicPopup.confirm({
                             title: 'Exit',
                             template: 'Exit Application, Are you sure. Continue?'
@@ -117,6 +115,8 @@
                                 navigator.app.exitApp();
                             } 
                         });
+                    }else if( $state.current.name == "UsernameLogin"){
+                        $state.go("landingpage");
                     }
                     event.preventDefault();
                 }, 100);
@@ -126,55 +126,22 @@
                 
                 
                 //show first screen
-                var cno=Global.getFromLocalStorage("cno");
+                var cno=Global.getFromLocalStorage(GlobalConstants.ls_mobilenumber);
                 if(cno && cno.length>0){
-                    $state.go("Login");
+                    $state.go("UsernameLogin");
                 }else{
                     $state.go("landingpage");
                 }
                    
                 
-                
-
-
-             
 
             }); //Ionic Platformready
 
 
             $rootScope.goto = function (pageName) {
-                if (pageName == "AddAmount") {
-                    Global.showLoading();
-                    var URL = GlobalConstants.MembersURL;
-                    NetCall.httpGET({
-                        url: URL,
-                        success: function (data, status, headers, config) {
-                            if (data.status == "SUCCESS") {
-                                var membersList = data.data;
-                                var data = passData.getData();
-                                data.membersList=membersList;
-                                passData.saveData(data);
-                                $state.go(pageName);
-                                $ionicLoading.hide();
-                            } else {
-                                //$scope.userData = {};
-                                Global.showAlert(GlobalConstants.errorAlertHeader, data.message);
-                                $ionicLoading.hide();
-                            }
-                        },
-                        error: function (data, status, headers, config) {
-                            $ionicLoading.hide();
-                        },
-                    }); // End requestcall
-                }
-                else if(pageName=="UserAccountDetails"){
-                    $rootScope.activetile = pageName;
+                
                     $state.go(pageName);
-                  // 
-                   
-                }else{
-                    Global.showAlert(GlobalConstants.infoAlertHeader, "Coming Soon");
-                }
+                
             }
 
 
@@ -185,71 +152,14 @@
                 });
                 confirmPopup.then(function (res) {
                     if (res) {
-                    // clear cache
-             //cordova plugin add https://github.com/tiltshiftfocus/cordova-plugin-cache.git
-                    // window.cache.clear();
-                    // window.cache.cleartemp(); //  
                         $ionicHistory.clearCache();
                         $ionicHistory.clearHistory();
-                        
-                        $state.go("Login");
-                       
-                            //Global.showLoading();
-                            // var userId = Global.getFromLocalStorage("UserId");
-                            // var tokenId = Global.getFromLocalStorage("TokenId");
-                            // var jsondata = {
-                            //     "userId": userId,
-                            //     "tokenId": tokenId
-                            // };
-                            // var encryptedData = Global.encryptJson(jsondata);
-                            // var URL = GlobalConstants.commonURL + GlobalConstants.LogoutURL;
-                            // NetCall.httpPOST({
-                            //     url: URL,
-                            //     data: {
-                            //         "request": encryptedData
-                            //     },
-                            //     success: function (data, status, headers, config) {
-                            //         var decryptedData = Global.decryptString(data.response.toString().replace(/\n/g, ""));
-                            //         var result = JSON.parse(decryptedData);
-                            //         if (result.status == "SUCCESS") {
-                            //             $rootScope.$emit("logoutSuccess");
-                            //             $ionicLoading.hide();
-                            //             Global.showAlert(GlobalConstants.infoAlertHeader, "You have been successfully logged out!");
-                            //             if(RegistrationMode=="CARD"){
-                            //                 $state.go("DebitCardLogin");
-                            //             }else{
-                            //                 $state.go("LoginTabs.InternetBankingLogin");
-                            //             }
-
-                            //         }
-                            //     },
-                            //     error: function (data, status, headers, config) {
-                            //         $ionicLoading.hide();
-                            //         $rootScope.$emit("logoutSuccess");
-                            //         //console.log("error" + data);
-                            //     },
-                            // }); // End requestcall
+                        $state.go("UsernameLogin");
                         }
                 });
             }
-
-          
- 
-
         }
     ])
-     // Run function
-
-    // .config(function () {
-    //    // $ionicConfigProvider.views.swipeBackEnabled(false);
-    //     // $stateProvider
-    //     // //sohel
-    //     //     .state('registration', {
-    //     //         url: '/registration',
-    //     //         templateUrl: 'templates/license.html',
-    //     //         controller: 'UserController',
-    //     //     })
-    // })
-
+   
 
 

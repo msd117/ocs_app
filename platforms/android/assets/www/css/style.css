@@ -4,7 +4,7 @@
 
 .ocs_header{
     height: 60px;
-    background-color: pink;
+    background-color: #bf1a17 ;
     padding: 0px;
   
 }
@@ -84,14 +84,16 @@
 }
 .popup-buttons .button:last-child {
     margin-right: 0px;
-    border-color: pink;
-    background-color: pink;
+    border-color: #bf1a17 ;
+    background-color: #bf1a17 ;
     color: #fff;
 }
 .ocs_complaint_image{
-    width: 60vw;
+    /* width: 60vw;
     height: 60vw;
-    padding: 5px;
+    padding: 5px; */
+    width: 100%;
+    height: 100%;
 
 }
 .ocs_dashboard_topbanner{
@@ -129,17 +131,18 @@
 }
 .ocs_selectimage_button, .ocs_selectimage_button.activated{
     margin-top: 10px;
-    width: 60%;
-    height: 40px;
+    width: 90%;
+    height: 55px;
     margin-bottom: 10px;
-    Background-color: pink;
+    line-height: 55px;
+    Background-color: #bf1a17 ;
     color: #FFFFFF;
 }
 .ocs_map{
     height: 300px;
     width: 80%;
     display: none;
-    /* background-color: pink; */
+    /* background-color: #bf1a17 ; */
 }
 
 .center2 {margin-left: auto;margin-right: auto;}
@@ -299,3 +302,34 @@
 }
 .ocs_password input{-webkit-text-security:disc;}
 .ocs_password_none input{-webkit-text-security:none;}
+
+
+
+#map {
+    height: 400px;
+    width: 100%;
+  }
+  #legend {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #000;
+  }
+  #legend h3 {
+    margin-top: 0;
+  }
+  #legend img {
+    vertical-align: middle;
+  }
+
+  .profileimage {
+    margin-top: 45px !important;
+    border-radius: 50%;
+    width: 120px!important;
+    height: 120px !important;
+    border: 2px solid red;
+    margin-bottom: 15px !important;
+  
+    
+}

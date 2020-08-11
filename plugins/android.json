@@ -66,6 +66,9 @@
     },
     "cordova-plugin-x-socialsharing": {
       "PACKAGE_NAME": "com.stepup.maven"
+    },
+    "cordova-plugin-sim": {
+      "PACKAGE_NAME": "com.stepup.maven"
     }
   },
   "dependent_plugins": {

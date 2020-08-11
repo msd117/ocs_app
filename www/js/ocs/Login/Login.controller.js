@@ -5,7 +5,7 @@ LoginCtrl.$inject=['$scope','$state','NetCall','Global','GlobalConstants','$ioni
 function LoginCtrl($scope,$state,NetCall,Global,GlobalConstants,$ionicLoading){
     
 $scope.data={};
-$scope.data.userName=Global.getFromLocalStorage("UserName");
+$scope.data.mobilenumber=Global.getFromLocalStorage(GlobalConstants.ls_mobilenumber)?Global.getFromLocalStorage(GlobalConstants.ls_mobilenumber):"";
 $scope.login=function(){
     Global.showLoading();
     var jsondata={
@@ -49,14 +49,14 @@ $scope.UsernameLogin=function(){
 
         success:function(data,status,headers,config){
             if(data.SUCCESS=="1"){
-                // Global.showAlert(GlobalConstants.ErrorHeading,JSON.stringify(data));
-                Global.setInLocalStorage("cno",data.id),
+                console.log(JSON.stringify(data));
+                Global.setInLocalStorage("cno", data.id);
+                Global.setInLocalStorage(GlobalConstants.ls_mobilenumber, $scope.data.mobilenumber);
                 $state.go('dashboard');
                 $ionicLoading.hide();
             }else{
-                // Global.showAlert(GlobalConstants.ErrorHeading,JSON.stringify(data));
-                $scope.data.mobilenumber="";
-                $scope.data.pin="";
+                Global.showAlert(GlobalConstants.errorAlertHeader, data.message);
+                $scope.data={};
                 $ionicLoading.hide();
             }
         },

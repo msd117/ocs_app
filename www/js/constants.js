@@ -15,9 +15,20 @@ angular.module('starter.constants', [])
         "registration":"https://ocs-project.000webhostapp.com/api/Registration.php",
         "login":"https://ocs-project.000webhostapp.com/api/Login.php",
         "UsernameLogin":"https://ocs-project.000webhostapp.com/api/UsernameLogin.php",
+
+        
+        "newcomplaint":"https://onlinecomplaintsystem.000webhostapp.com/newcomplaint.php",
+        "viewcomplaint":"https://onlinecomplaintsystem.000webhostapp.com/ViewComplaints.php",
+        "complaintbyid":"https://onlinecomplaintsystem.000webhostapp.com/complaintbyid.php",
+        "registration":"https://onlinecomplaintsystem.000webhostapp.com/Registration.php",
+        "login":"https://onlinecomplaintsystem.000webhostapp.com/Login.php",
+        "UsernameLogin":"https://onlinecomplaintsystem.000webhostapp.com/UsernameLogin.php",
+        "viewcomplaintnearme":"https://onlinecomplaintsystem.000webhostapp.com/viewcomplaintsnearme.php",
+        "mydetails":"https://onlinecomplaintsystem.000webhostapp.com/mydetails.php",
+        "forgotpassword":"https://onlinecomplaintsystem.000webhostapp.com/forgotpassword.php",
         
         
-        
+        "ls_mobilenumber":"mobilenumber",
         
         "complaints":[
             {"title": "Litter and Trash","divider":true},

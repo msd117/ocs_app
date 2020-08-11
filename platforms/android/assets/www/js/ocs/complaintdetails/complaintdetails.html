@@ -48,31 +48,3 @@
             </div>
         </ion-content>
     </ion-view>
-     <!-- <label class="item item-input item-floating-label labelBottomBorder " ng-class="{'active':data.selectedMember.length>0}">
-        <img src="img/user.png">            
-        <span class="input-label">Select Member</span>
-        <select class="asSelect " name="selectedMember" ng-model="data.selectedMember" required>
-            <option value="" disabled selected>Select Member</option>
-            <option ng-repeat="item in data.membersList"  value="{{item.Id}}">{{item.Id}}-{{item.Name}}</option>
-        </select>
-    </label> 
-        <span ng-if="submitted && userForm.selectedMember.$error.required" class="error-message marginleft25">Please Select Member</span>
-    <label class="item item-input item-floating-label labelBottomBorder ">
-        <img src="img/date.png"> 
-        <span class="input-label">Date</span>
-        <input type="text" onfocus="(this.type='date')" name="date" ng-model="data.date" placeholder="Select Date" required>
-    </label>
-        <span ng-if="submitted && userForm.total.$error.required" class="error-message marginleft25">Please Enter Total Amount</span>
-    <label class="item item-input item-floating-label labelBottomBorder ">
-        <img src="img/description.png"> 
-        <span class="input-label">Transaction PIN</span>
-        <input type="tel" name="transactionPIN" ng-model="data.transactionPIN" class="tel-Password" numberonly ng-trim="false" nospace maxlength="4" minlength="4" ng-maxlength="4" ng-minlength="4" required placeholder="Enter Transaction PIN">
-    </label>
-    <span ng-if="submitted && userForm.transactionPIN.$error.required" class="error-message marginleft25">Transaction Pin should be 4 digit</span>
-    <span ng-if="submitted && userForm.date.$error.required" class="error-message marginleft25">Select Date</span>
-    <label class="item item-input item-floating-label labelBottomBorder ">
-        <img src="img/amount.png"> 
-        <span class="input-label">Amount</span>
-        <input type="tel" name="amount"  ng-model="data.amount" valid-number required placeholder="Enter Amount">
-    </label>
-    <span ng-if="userForm.$submitted && userForm.amount.$error.required" class="error-message marginleft25">Please Enter Amount</span>-->
