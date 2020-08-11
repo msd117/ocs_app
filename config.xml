@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.stepup.maven" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Maven</name>
+    <name>OCS</name>
     <description>An awesome Maven app</description>
     <author email="javahostingtest@gmail.com" href="https://www.google.com/gmail">StepUp Team</author>
     <content src="index.html" />
@@ -78,7 +78,6 @@
         <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
     </platform>
-    <engine name="android" spec="^6.2.3" />
     <plugin name="cl.rmd.cordova.dialoggps" spec="~0.0.2" />
     <plugin name="cordova-plugin-android-permissions" spec="^1.0.0" />
     <plugin name="cordova-plugin-console" spec="1.0.5" />
@@ -93,4 +92,8 @@
     <plugin name="cordova.plugins.diagnostic" spec="^3.9.2" />
     <plugin name="ionic-plugin-keyboard" spec="~2.2.1" />
     <plugin name="org.apache.cordova.plugin.cache" spec="https://github.com/tiltshiftfocus/cordova-plugin-cache.git" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="^5.4.0">
+        <variable name="ANDROID_SUPPORT_V4_VERSION" value="24.1.1+" />
+    </plugin>
+    <engine name="android" spec="^6.2.3" />
 </widget>

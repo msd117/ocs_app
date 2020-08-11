@@ -196,13 +196,26 @@ function complaintdetails($scope, $ionicPlatform, $rootScope, $interval, $timeou
         }
     }  
 
+    function formatDate(date) {
+        var d = new Date(date),
+            month = '' + (d.getMonth() + 1),
+            day = '' + d.getDate(),
+            year = d.getFullYear();
+    
+        if (month.length < 2) 
+            month = '0' + month;
+        if (day.length < 2) 
+            day = '0' + day;
+    
+        return [year, month, day].join('-');
+    }
 
 $scope.submit= function(){
     if($scope.selectedimage && $scope.selectedimage.length>0){
         if( $scope.city=="Aurangabad"){
             Global.showLoading()
             var jsondata = {
-                "date": new Date(),//$scope.data.date,
+                "date": formatDate(new Date()),//$scope.data.date,
                 "image":$scope.selectedimage,
                 "lat":Latitude,
                 "lang":Longitude,
@@ -225,7 +238,7 @@ $scope.submit= function(){
                     console.log(JSON.stringify(data));
                     $ionicLoading.hide();
                     if (data.SUCCESS == 1) {
-                        Global.showAlert(GlobalConstants.infoAlertHeader, data.message + data.complaintid);
+                        Global.showAlert(GlobalConstants.infoAlertHeader, data.message);
                         $state.go("dashboard");
                         // $state.go("Acknowledgement",{successMsg:obj.message});
                     } else {

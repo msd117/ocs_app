@@ -1,0 +1,63 @@
+<ion-header-bar class="newheaderBar bar newbar-header " align-title="center">
+    <div class="">
+        <img class="newbankLogo" src="img/Header_logo.png" />
+    </div>
+    <div class="newalignright">
+        <button class="newheaderButtons " ng-click="logout()"><i class="newlogOut"></i></button>
+    </div> 
+</ion-header-bar>
+<ion-view view-title="Statement" name="Statement-view">
+    <ion-content has-header="true">    
+            <div class="dashboard_subheader">
+                <h2>Statement</h2>
+            </div>
+            <div class="newmargin15" ng-repeat="item in statementData" >
+                <div class="row newaccounrow newnothing">
+                    <div class="col col30 newnothing">
+                        <h2 class="newaccountype">ID</h2>
+                        <h2 class="newaccountype">Name</h2>
+                        <h2 class="newaccountype">Amount</h2>
+                        <h2 class="newaccountype">Date</h2>
+                        <h2 class="newaccountype">Total</h2>
+                    </div>
+                    <div class="col col70 newnothing">
+                        <h2 class="newaccounnumber">: {{item.Id}}</h2>
+                        <h2 class="newaccounnumber">: {{item.Name}}</h2>
+                        <h2 class="newaccounnumber">: ₹{{item.Amount}}</h2>
+                        <h2 class="newaccounnumber">: {{item.Date}}</h2>
+                        <h2 class="newaccounnumber">: ₹{{item.Total}}</h2>
+                        
+                    </div>
+                </div>
+                <div class="row newlast5transrow newnothing" ng-click="userDetails(item)">
+                    <div class="col col-90 newnothing">
+                        <h2 class="newaccounlast5transc">View Last 5 Transactions</h2>
+                    </div>
+                    <div class="col col-10 center newnothing">
+                        <img class="newaccounarrow" src="img/Arrow.png">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </ion-content>
+</ion-view>
+<ion-footer-bar align-title="center" class="footer hide-on-keyboard-open">
+    <div class="row paddingnone" >
+        <div class="col col-25 footerTile" ng-class="{ 'activefooterTile': activetile === 'AddAmount' }" ng-click="goto('AddAmount')">
+            <img src="img/Footer_Account.png">
+            <p>Add Amount</p>
+        </div>
+        <div class="col col-25 footerTile" ng-class="{ 'activefooterTile': activetile === 'FundTransferMenu' }" ng-click="goto('UserAccountDetails')">
+            <img src="img/Footer_Fundtransfer.png">
+            <p>Statements</p>
+        </div>
+        <div class="col col-25 footerTile" ng-class="{ 'activefooterTile': activetile === 'Menu' }" ng-click="goto('AccountDetailScreen')">
+            <img src="img/Footer_Mpassbook.png">
+            <p>Coming Soon</p>
+        </div>
+        <div class="col col-25 footerTile" ng-class="{ 'activefooterTile': activetile === 'more' }" ng-click="goto('SettingsMenu')">
+            <img src="img/Footer_Moremenus.png">
+            <p>More</p>
+        </div>
+    </div>
+</ion-footer-bar>

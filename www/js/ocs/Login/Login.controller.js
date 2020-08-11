@@ -50,6 +50,7 @@ $scope.UsernameLogin=function(){
         success:function(data,status,headers,config){
             if(data.SUCCESS=="1"){
                 // Global.showAlert(GlobalConstants.ErrorHeading,JSON.stringify(data));
+                Global.setInLocalStorage("cno",data.id),
                 $state.go('dashboard');
                 $ionicLoading.hide();
             }else{

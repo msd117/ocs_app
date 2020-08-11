@@ -5,6 +5,9 @@ angular.module('registration.module',[])
  function registrationCtrl($scope,$state,NetCall,Global,GlobalConstants,$ionicLoading){
 
     $scope.data={};
+    $scope.data.name="sohel"
+    $scope.data.emailid="sohel@hotmail.com"
+    $scope.data.mobilenumber="9126457832"
     $scope.RegisterUser=function(){
         $state.go('RegistrationForm');
     }

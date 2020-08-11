@@ -9,12 +9,12 @@ angular.module('starter.constants', [])
         "infoAlertHeader":"Info",
         "MembersURL":"https://inanimate-dissemina.000webhostapp.com/connection.php",
         "loginURL":"https://inanimate-dissemina.000webhostapp.com/login.php",
-        "newcomplaint":"https://onlinecomplaintsystem.000webhostapp.com/newcomplaint.php",
-        "viewcomplaint":"https://onlinecomplaintsystem.000webhostapp.com/ViewComplaints.php",
-        "complaintbyid":"https://onlinecomplaintsystem.000webhostapp.com/complaintbyid.php",
-        "registration":"https://onlinecomplaintsystem.000webhostapp.com/Registration.php",
-        "login":"https://onlinecomplaintsystem.000webhostapp.com/Login.php",
-        "UsernameLogin":"https://onlinecomplaintsystem.000webhostapp.com/UsernameLogin.php",
+        "newcomplaint":"https://ocs-project.000webhostapp.com/api/newcomplaint.php",
+        "viewcomplaint":"https://ocs-project.000webhostapp.com/api/ViewComplaints.php",
+        "complaintbyid":"https://ocs-project.000webhostapp.com/api/complaintbyid.php",
+        "registration":"https://ocs-project.000webhostapp.com/api/Registration.php",
+        "login":"https://ocs-project.000webhostapp.com/api/Login.php",
+        "UsernameLogin":"https://ocs-project.000webhostapp.com/api/UsernameLogin.php",
         
         
         

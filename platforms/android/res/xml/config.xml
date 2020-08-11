@@ -58,11 +58,14 @@
     <feature name="CropPlugin">
         <param name="android-package" value="com.jeduan.crop.CropPlugin" />
     </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
     <feature name="Diagnostic">
         <param name="android-package" value="cordova.plugins.Diagnostic" />
         <param name="onload" value="true" />
     </feature>
-    <name>Maven</name>
+    <name>OCS</name>
     <description>An awesome Maven app</description>
     <author email="javahostingtest@gmail.com" href="https://www.google.com/gmail">StepUp Team</author>
     <content src="index.html" />
