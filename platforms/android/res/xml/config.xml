@@ -1,10 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.msd.ocs" version="0.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="DialogGPS">
+        <param name="android-package" value="cl.rmd.cordova.dialoggps.DialogGPS" />
+    </feature>
     <feature name="ActionSheet">
         <param name="android-package" value="nl.xservices.plugins.actionsheet.ActionSheet" />
     </feature>
-    <feature name="Camera">
-        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    <feature name="Permissions">
+        <param name="android-package" value="com.android.plugins.Permissions" />
+    </feature>
+    <feature name="CropPlugin">
+        <param name="android-package" value="com.jeduan.crop.CropPlugin" />
     </feature>
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
@@ -21,6 +27,18 @@
         <param name="android-package" value="com.hiddentao.cordova.filepath.FilePath" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="networkinterface">
+        <param name="android-package" value="com.albahra.plugin.networkinterface.networkinterface" />
+    </feature>
+    <feature name="Sim">
+        <param name="android-package" value="com.pbakondy.Sim" />
+    </feature>
     <feature name="SplashScreen">
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="onload" value="true" />
@@ -33,36 +51,18 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
     <feature name="Keyboard">
         <param name="android-package" value="io.ionic.keyboard.IonicKeyboard" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="Permissions">
-        <param name="android-package" value="com.android.plugins.Permissions" />
-    </feature>
-    <feature name="networkinterface">
-        <param name="android-package" value="com.albahra.plugin.networkinterface.networkinterface" />
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
-    </feature>
     <feature name="Cache">
         <param name="android-package" value="org.apache.cordova.plugin.cache.Cache" />
     </feature>
-    <feature name="DialogGPS">
-        <param name="android-package" value="cl.rmd.cordova.dialoggps.DialogGPS" />
-    </feature>
-    <feature name="Geolocation">
-        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
-    </feature>
-    <feature name="CropPlugin">
-        <param name="android-package" value="com.jeduan.crop.CropPlugin" />
-    </feature>
-    <feature name="SocialSharing">
-        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
-    </feature>
-    <feature name="Sim">
-        <param name="android-package" value="com.pbakondy.Sim" />
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
     </feature>
     <feature name="Diagnostic">
         <param name="android-package" value="cordova.plugins.Diagnostic" />

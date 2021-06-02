@@ -7,76 +7,76 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-actionsheet": {
-      "PACKAGE_NAME": "com.ionicframework.uploadimage328920"
-    },
     "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.ionicframework.uploadimage328920"
+      "PACKAGE_NAME": "com.msd.ocs"
     },
-    "cordova-plugin-console": {
-      "PACKAGE_NAME": "com.ionicframework.uploadimage328920"
-    },
-    "cordova-plugin-device": {
-      "PACKAGE_NAME": "com.ionicframework.uploadimage328920"
-    },
-    "cordova-plugin-file": {
-      "PACKAGE_NAME": "com.ionicframework.uploadimage328920"
-    },
-    "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "com.ionicframework.uploadimage328920"
-    },
-    "cordova-plugin-filepath": {
-      "PACKAGE_NAME": "com.ionicframework.uploadimage328920"
-    },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "com.ionicframework.uploadimage328920"
-    },
-    "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.ionicframework.uploadimage328920"
-    },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.ionicframework.uploadimage328920"
-    },
-    "ionic-plugin-keyboard": {
-      "PACKAGE_NAME": "com.ionicframework.uploadimage328920"
-    },
-    "cordova-plugin-android-permissions": {
-      "PACKAGE_NAME": "com.stepup.kileark"
-    },
-    "cordova-plugin-networkinterface": {
-      "PACKAGE_NAME": "com.stepup.kileark"
-    },
-    "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.stepup.kileark"
-    },
-    "org.apache.cordova.plugin.cache": {
-      "PACKAGE_NAME": "com.stepup.kileark"
-    },
-    "cl.rmd.cordova.dialoggps": {
-      "PACKAGE_NAME": "com.stepup.maven"
-    },
-    "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "com.stepup.maven"
-    },
-    "cordova.plugins.diagnostic": {
-      "PACKAGE_NAME": "com.stepup.maven"
-    },
-    "cordova-plugin-crop": {
-      "PACKAGE_NAME": "com.stepup.maven"
-    },
-    "cordova-plugin-x-socialsharing": {
-      "PACKAGE_NAME": "com.stepup.maven"
-    },
-    "cordova-plugin-sim": {
-      "PACKAGE_NAME": "com.stepup.maven"
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.msd.ocs"
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-compat": {
-      "PACKAGE_NAME": "com.ionicframework.uploadimage328920"
+    "cl.rmd.cordova.dialoggps": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-actionsheet": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-crop": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-filepath": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-networkinterface": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-sim": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.msd.ocs"
     },
     "es6-promise-plugin": {
-      "PACKAGE_NAME": "com.stepup.maven"
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "cordova.plugins.diagnostic": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.msd.ocs"
+    },
+    "org.apache.cordova.plugin.cache": {
+      "PACKAGE_NAME": "com.msd.ocs"
     }
   }
 }

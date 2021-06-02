@@ -4,7 +4,7 @@
 
 .ocs_header{
     height: 60px;
-    background-color: #bf1a17 ;
+    background-color:pink ;
     padding: 0px;
   
 }
@@ -84,8 +84,8 @@
 }
 .popup-buttons .button:last-child {
     margin-right: 0px;
-    border-color: #bf1a17 ;
-    background-color: #bf1a17 ;
+    border-color:pink ;
+    background-color:pink ;
     color: #fff;
 }
 .ocs_complaint_image{
@@ -135,14 +135,14 @@
     height: 55px;
     margin-bottom: 10px;
     line-height: 55px;
-    Background-color: #bf1a17 ;
+    Background-color:pink ;
     color: #FFFFFF;
 }
 .ocs_map{
     height: 300px;
     width: 80%;
     display: none;
-    /* background-color: #bf1a17 ; */
+    /* background-color:pink ; */
 }
 
 .center2 {margin-left: auto;margin-right: auto;}

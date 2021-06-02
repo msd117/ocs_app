@@ -159,7 +159,7 @@ function complaintdetails($scope, $ionicPlatform, $rootScope, $interval, $timeou
                             toDataUrl(croppedimage, function(base64Img) {
                                 $scope.selectedimage=base64Img;
                                 $scope.confirmPopup.close();
-                                $scope.$apply();
+                                // $scope.$apply();
                             },
                             function(error){
                                 console.log(error);
@@ -178,7 +178,7 @@ function complaintdetails($scope, $ionicPlatform, $rootScope, $interval, $timeou
                         toDataUrl(croppedimage, function(base64Img) {
                                     $scope.selectedimage=base64Img;
                                     $scope.confirmPopup.close();
-                                    $scope.$apply();
+                                    // $scope.$apply();
                                 },
                                 function(error){
                                     console.log(error);
